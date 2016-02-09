@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<style> 
-			
-			.body{
+	<head>	
+		<style>
+			html{
 				font-size: 10px;				
 			}
 			
@@ -15,6 +14,7 @@
 			.circle {
 				border-radius: 50%;
 				background-color: rgb(255,90,0);
+				opacity:.2;
 				width: 2rem;
 				height: 2rem;
 				margin: .5rem;
@@ -22,38 +22,40 @@
 				animation-name: circleAnimation;
 				animation-iteration-count: 10;
 				animation-direction: normal;
-				animation-duration: 3s;
+				animation-duration: 2s;
 				animation-timing-function: ease-in-out;
 			}
 			
 			.delay-1 {
-				animation-delay: 1s;
+				animation-delay: .75s;
 			}
 			
 			.delay-2 {
-				animation-delay: 2s;
+				animation-delay: 1.5s;
 			}
 			
 			/* Standard syntax */
 			@keyframes circleAnimation{
 				0%{
+				  opacity:.2;
 					margin: .5rem;
 					width: 2rem;
 					height: 2rem;
 				}
-				16.5%{
+				30%{
+				  opacity:1;
 					margin: 0rem;
 					width: 3rem;
 					height: 3rem;
 				}        
-        33%{
+				60%{
+					opacity:.2;
 					margin: .5rem;
 					width: 2rem;
 					height: 2rem;
 				}
 			}	
-
-			}	</style>
+		</style>
 	</head>
 	<body>
 
